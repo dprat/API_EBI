@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+
+<table>
+     {% for dict_item in my_list %}
+          <div>
+            <!--<tr> <a href="{{ dict_item.Link }}">{{ dict_item.dbname }}</a></tr> <br>-->
+            <tr> {{ dict_item.dbname }}  </tr> <br>
+            <tr> {{ dict_item.type }}  </tr>
+          </div>
+     {% endfor %}
+</table>
+
+</body>
+</html>
